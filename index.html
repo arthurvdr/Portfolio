@@ -2,63 +2,114 @@
 <html lang="en">
 
 <head>
-  <title>Arthur van der Rest</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="CSS/home.css">
+    <title>Arthur van der Rest</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
 </head>
 
 <body>
-    <header>  
-        <h1>UX/UI Designer</h1>
-        <nav>
+    <header id="site-header">
+        <nav class="burger">
+            <a href="#" class="burger__button" id="burger-button">
+                <span class="burger__button__icon"></span>
+            </a>
+            <ul class="burger__menu">
+                <li><a href="index.html" >Work </a></li>
+                <li><a href="notwork.html" >Not Work</a></li>
+                <li><a href="about.html" >About</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            
+            </ul> 
+         </nav>
 
-            <a href="">Work</a>
-            <a href="">Not Work</a>
-            <a href="">About Me</a>
-            <a href="">Contact</a>
-        </nav>   
+        
+            <a href="index.html" class="navbar">Work</a>
+            <a href="notwork.html" class="navbar navbarfont" >Not Work</a>
+            <img src="image/logo/ziv.png" id="logo-nav" class="navbar">
+            <a href="about.html" class="navbar navbarfont">About</a>
+            <a href="contact.html" class="navbar navbarfont">Contact</a>
+        
     </header>
 
     <main>
-        <section>
-            <a href="">
-                <div>
-                    <img src="image/portfolio/whatsapp.jpg">
-                    <h2>Add a feature - QuickPay</h2>
-            </a>
-                </div>
-            <a href=""> 
-                <div>
-                    <img src="image/portfolio/imout.jpg">
-                    <h2>HR Web App - ImOut</h2>
-                </div>
-            </a>
-            <a href=""> 
-                <div>
-                    <img src="image/portfolio/imout.jpg">
-                    <h2>Wellness App</h2>
-                    <p></p>
-                </div>
-            </a>
-            <a href=""> 
-                <div>
-                    <img src="image/portfolio/luyens.jpg">
-                    <h2>Website - Filmmaker</h2>
-                </div>
-            </a>
+        <section id="portfolio">
+            <div class="photo">
+                <a href="" class="link">
+                    <div class="image-container">
+                        <img src="image/portfolio/finalproject.jpg">
+                        <div class="after">
+                            <h2 class="ordi">Travel App<br><br><b>FRIP</b></h2>
+                            <h2 class="phone"><b>FRIP</b> - Travel App</h2>
+                        </div>
+                       
+                    </div>
+                </a>
+                <a href="" class="link">
+                    <div class="image-container">
+                        <img src="image/portfolio/whatsapp.jpg">
+                        <div class="after">
+                            <h2 class="ordi">Add a Feature<br><br><b>QUICKPAY</b></h2>
+                            <h2 class="phone"><b>QUICKPAY</b> - Add a Feature</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="photo">
+                <a href="" class="link">
+                    <div class="image-container">
+                        <img src="image/portfolio/imout.jpg">
+                        <div class="after">
+                            <h2 class="ordi">HR Web App<br><br><b>ImOut</b></h2>
+                            <h2 class="phone"><b>ImOUt</b> - HR Web App</h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="link">
+                    <div class="image-container">
+                        <img src="image/portfolio/luyens.jpg">
+                        <div class="after">
+                            <h2 class="ordi">Responsive Website<br><br><b>FILMMAKER</b></h2>
+                            <h2 class="phone"><b>FILMMAKER</b> - Responsive Website</h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+                  
         </section>
     </main>
 
-    <footer>
+    <footer id="site-footer">
         <div>
-            <ul class="social-media">
-                <li><a href="https://www.facebook.com/arthurvdr" class="social-facebook">Facebook</a></li>
-                <li><a href="https://www.instagram.com/arthurvdr/" class="social-instagram">Instagram</a></li>
-                <li><a href="https://www.youtube.com/channel/UCMCADHH8qu3XIgqfGyMJktA" class="social-youtube">YouTube</a></li>
-                <li><a href="https://www.linkedin.com/in/arthurvdr/" class="social-linkedin">LinkedIn</a></li>
-            </ul>
+            <div class="social-media">
+                <a href="https://www.instagram.com/arthurvdr/" class="social-instagram"><img src="image/icon/instagram.png"></a>
+                <a href="https://www.youtube.com/channel/UCMCADHH8qu3XIgqfGyMJktA" class="social-youtube"><img src="image/icon/youtube-logo.png"></a>
+                <a href="mailto:arthurvdr@gmail.com" class="social-gmail"><img src="image/icon/gmail.png"></a>
+                <a href="https://www.linkedin.com/in/arthurvdr/" class="social-linkedin"><img src="image/icon/linkedin.png"></a>
+            </div>
+			<p class="copyright contact-form">Arthur van der Rest</p>
+            <p class="contact-form">arthurvdr@gmail.com</p>
+            <p class="contact-form">+32 479.57.37.73</p>
+			<p class="signature">Made with <img src="image/icon/pain.png" id="pain"> by Ziv</p>
         </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+
+
 </body>
+
+
+
+
 </html>
