@@ -57,7 +57,15 @@ html {
     grid-template-rows: 40px;
   }
 
- 
+  .about {
+      width: 100%;
+      position: absolute;
+  }
+
+  .about {
+    width: 100%;
+    
+}
   
 
 
