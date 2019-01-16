@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/home.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
     <main>
         <section id="portfolio">
             <div class="photo">
-                <a href="" class="link">
+                <a href="image/portfolio/frip.gif" data-toggle="lightbox" data-lity class="link">
                     <div class="image-container">
                         <img src="image/portfolio/finalproject.jpg">
                         <div class="after">
@@ -47,7 +50,7 @@
                        
                     </div>
                 </a>
-                <a href="" class="link">
+                <a href="image/portfolio/whatsapp.gif" data-toggle="lightbox" data-lity class="link">
                     <div class="image-container">
                         <img src="image/portfolio/whatsapp.jpg">
                         <div class="after">
@@ -58,7 +61,7 @@
                 </a>
             </div>
             <div class="photo">
-                <a href="" class="link">
+                <a href="image/portfolio/imout.gif" data-toggle="lightbox" data-lity class="link">
                     <div class="image-container">
                         <img src="image/portfolio/imout.jpg">
                         <div class="after">
@@ -67,7 +70,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="" class="link">
+                <a href="http://arthurluyens.com" target="_blank" class="link">
                     <div class="image-container">
                         <img src="image/portfolio/luyens.jpg">
                         <div class="after">
@@ -104,6 +107,11 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
+
+  <script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });</script>
     <script src="main.js"></script>
 
 
