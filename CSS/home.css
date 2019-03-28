@@ -20,7 +20,6 @@ html {
     color: #111;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    line-height: 147%;
   }
   
   h1 {
@@ -237,6 +236,7 @@ body:before {
   .phone{
     visibility: visible;
     overflow: visible;
+    
   }
 
   .link {
@@ -254,7 +254,7 @@ body:before {
   .photo img {
     width: 100%;
     height: 100%;
-    
+    margin-bottom: -4px;
   }
   
 
@@ -367,6 +367,7 @@ body:before {
         position: relative;
         transition: all .2s;
         height: 100%;
+        margin-bottom: -4px;
     }
       .image-container .after {
         position: absolute;
@@ -398,6 +399,7 @@ body:before {
     .ordi{
       visibility: visible;
       overflow: visible;
+      position: relative;
       
     }
     .phone{
@@ -411,6 +413,11 @@ body:before {
       font-size: 16px;
       
     }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0px;
+    }
   }
 
 
@@ -419,6 +426,7 @@ body:before {
   
   }
 
+ 
 
   
   
