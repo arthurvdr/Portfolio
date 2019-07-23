@@ -15,7 +15,7 @@
     <meta property="og:site_name" content="About"/>
     <meta property="og:title" content="Arthur van der Rest - Ux/Ui Designer"/>
     <meta property="og:description" content="My core strength and passion as a designer lies in the understanding of cognitive human behavior. This awareness and focus enable me to produce clever user experience. My diverse experience enables me to bring design to life with different tools and skills by understanding the big picture of a project."/>
-    <meta property="og:image" content="http://www.arthurvdr.com/image/portfolio/thumbnail.jpg">
+    <meta property="og:image" content="https://www.arthurvdr.com/image/portfolio/thumbnail.jpg">
     <meta property="og:type" content="Portfolio"/>
 
     <title>Arthur van der Rest</title>
@@ -23,7 +23,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="CSS/about.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.3.0/lity.min.js"></script>
 </head>
 
 <body>
@@ -55,8 +58,34 @@
     <main>
         <section id="portfolio">
            
-            <h1>COMING<br><br><br><br>SOON</h1>
+            <h1>DESCRIPTION<br>COMING<br>SOON</h1>
         </section>
+        
+
+        <section id="portfolio">
+            <div class="photo">
+                <a href="https://www.linkedin.com/in/arthurvdr/" target="_blank" class="link">
+                    <div class="image-container">
+                        <img src="image/about/Linkedin_website.svg" class="ordi">
+                        <img src="image/about/Linkedin_website.svg" class="phone">
+                        <div class="after">
+                            <h2 class="ordi"><b>LinkedIn</b></h2>
+                        </div>
+                       
+                    </div>
+                </a>
+                <a href="image/about/CV_Arthur van der Rest.jpg" data-toggle="lightbox" data-lity class="link">
+                    <div class="image-container">
+                        <img src="image/about/CV_website.svg" class="ordi">
+                        <img src="image/about/CV_website.svg" class="phone">
+                        <div class="after">
+                            <h2 class="ordi"><b>CV</b></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <footer id="site-footer">
@@ -73,11 +102,16 @@
 			<p class="signature">Made with <img src="image/icone/pain.png" id="pain"> by Ziv</p>
         </div>
     </footer>
-    <script
+  <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 
+
+  <script>$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });</script>
     <script src="main.js"></script>
 
 
